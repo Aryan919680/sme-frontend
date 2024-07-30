@@ -13,7 +13,7 @@ export default function FormDataPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3001/users'); // Adjust this if the API endpoint is different
+        const response = await fetch('https://sme-backend.onrender.com/users'); // Adjust this if the API endpoint is different
         if (!response.ok) throw new Error('Failed to fetch form data');
         const data = await response.json();
         setFormData(data);

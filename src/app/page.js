@@ -70,7 +70,7 @@ export default function Home() {
         documents: formData.documents.length > 0 ? formData.documents[0].name : null
       };
 
-      const response = await fetch('http://localhost:3001/users/submit', {
+      const response = await fetch('https://sme-backend.onrender.com/users/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
